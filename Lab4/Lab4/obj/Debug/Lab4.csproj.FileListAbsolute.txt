@@ -1,0 +1,9 @@
+U:\cis300\scholars\spring17\github\Lab4\Lab4\bin\Debug\Lab4.exe.config
+U:\cis300\scholars\spring17\github\Lab4\Lab4\bin\Debug\Lab4.exe
+U:\cis300\scholars\spring17\github\Lab4\Lab4\bin\Debug\Lab4.pdb
+U:\cis300\scholars\spring17\github\Lab4\Lab4\obj\Debug\Lab4.csprojResolveAssemblyReference.cache
+U:\cis300\scholars\spring17\github\Lab4\Lab4\obj\Debug\Lab4.Properties.Resources.resources
+U:\cis300\scholars\spring17\github\Lab4\Lab4\obj\Debug\Lab4.UserInterface.resources
+U:\cis300\scholars\spring17\github\Lab4\Lab4\obj\Debug\Lab4.csproj.GenerateResource.Cache
+U:\cis300\scholars\spring17\github\Lab4\Lab4\obj\Debug\Lab4.exe
+U:\cis300\scholars\spring17\github\Lab4\Lab4\obj\Debug\Lab4.pdb

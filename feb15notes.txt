@@ -1,0 +1,55 @@
+Project 2: due Thurs Feb 15
+My office hours: Thurs Feb 15 1-2:30
+
+******************************
+Contains method.
+
+******************************
+Doubly-linked lists.
+
+Updated doubly-linked node.
+
+DoubleNode<int> test = new DoubleNode<int>(1);
+test.Next = new DoubleNode<int>(2);
+test.Next.Prev = test;
+
+******************************
+Doubly-linked list class.
+
+Add method.
+
+Remove method.
+
+*******************************
+Enumerators.
+
+1) Make the collection class implement IEnumerable<T>
+
+2) Make an inner (private) class that implements IEnumerator<T>
+
+*******************************
+Stacks.
+
+add to a stack: add to top
+remove from a stack: remove from the top
+
+last-in, first-out
+
+C# stack.
+
+using System.Collections.Generic
+
+Stack<T> s = new Stack<T>();
+
+s.Push(elem)
+
+T item = s.Peek();
+
+T item = s.Pop();
+
+int total = s.Count
+
+
+Stack interface.
+
+Linked list implementation.

@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.uxDatesList = new System.Windows.Forms.ListBox();
             this.uxFileTab = new System.Windows.Forms.ToolStripMenuItem();
             this.uxOpenMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.uxDatesList = new System.Windows.Forms.ListBox();
             this.uxFilterBox = new System.Windows.Forms.GroupBox();
-            this.uxDateRange = new System.Windows.Forms.RadioButton();
-            this.uxBelowTemp = new System.Windows.Forms.RadioButton();
-            this.uxAboveTemp = new System.Windows.Forms.RadioButton();
             this.uxThisDate = new System.Windows.Forms.RadioButton();
+            this.uxAboveTemp = new System.Windows.Forms.RadioButton();
+            this.uxBelowTemp = new System.Windows.Forms.RadioButton();
+            this.uxDateRange = new System.Windows.Forms.RadioButton();
             this.uxFilterButton = new System.Windows.Forms.Button();
             this.uxUndoButton = new System.Windows.Forms.Button();
             this.uxCalendar = new System.Windows.Forms.MonthCalendar();
@@ -58,14 +58,6 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // uxDatesList
-            // 
-            this.uxDatesList.FormattingEnabled = true;
-            this.uxDatesList.Location = new System.Drawing.Point(13, 28);
-            this.uxDatesList.Name = "uxDatesList";
-            this.uxDatesList.Size = new System.Drawing.Size(362, 264);
-            this.uxDatesList.TabIndex = 1;
-            // 
             // uxFileTab
             // 
             this.uxFileTab.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -77,8 +69,17 @@
             // uxOpenMenu
             // 
             this.uxOpenMenu.Name = "uxOpenMenu";
-            this.uxOpenMenu.Size = new System.Drawing.Size(152, 22);
+            this.uxOpenMenu.Size = new System.Drawing.Size(112, 22);
             this.uxOpenMenu.Text = "Open...";
+            // 
+            // uxDatesList
+            // 
+            this.uxDatesList.FormattingEnabled = true;
+            this.uxDatesList.Location = new System.Drawing.Point(13, 28);
+            this.uxDatesList.Name = "uxDatesList";
+            this.uxDatesList.Size = new System.Drawing.Size(362, 264);
+            this.uxDatesList.TabIndex = 1;
+            this.uxDatesList.SelectedIndexChanged += new System.EventHandler(this.uxDatesList_SelectedIndexChanged);
             // 
             // uxFilterBox
             // 
@@ -93,29 +94,17 @@
             this.uxFilterBox.TabStop = false;
             this.uxFilterBox.Text = "Filter Options";
             // 
-            // uxDateRange
+            // uxThisDate
             // 
-            this.uxDateRange.AutoSize = true;
-            this.uxDateRange.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.uxDateRange.Location = new System.Drawing.Point(7, 20);
-            this.uxDateRange.Name = "uxDateRange";
-            this.uxDateRange.Size = new System.Drawing.Size(205, 21);
-            this.uxDateRange.TabIndex = 0;
-            this.uxDateRange.TabStop = true;
-            this.uxDateRange.Text = "Dates during selected range";
-            this.uxDateRange.UseVisualStyleBackColor = true;
-            // 
-            // uxBelowTemp
-            // 
-            this.uxBelowTemp.AutoSize = true;
-            this.uxBelowTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.uxBelowTemp.Location = new System.Drawing.Point(7, 55);
-            this.uxBelowTemp.Name = "uxBelowTemp";
-            this.uxBelowTemp.Size = new System.Drawing.Size(222, 21);
-            this.uxBelowTemp.TabIndex = 1;
-            this.uxBelowTemp.TabStop = true;
-            this.uxBelowTemp.Text = "Dates below given temperature";
-            this.uxBelowTemp.UseVisualStyleBackColor = true;
+            this.uxThisDate.AutoSize = true;
+            this.uxThisDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.uxThisDate.Location = new System.Drawing.Point(7, 125);
+            this.uxThisDate.Name = "uxThisDate";
+            this.uxThisDate.Size = new System.Drawing.Size(146, 21);
+            this.uxThisDate.TabIndex = 3;
+            this.uxThisDate.TabStop = true;
+            this.uxThisDate.Text = "This date in history";
+            this.uxThisDate.UseVisualStyleBackColor = true;
             // 
             // uxAboveTemp
             // 
@@ -129,17 +118,29 @@
             this.uxAboveTemp.Text = "Dates above given temperature";
             this.uxAboveTemp.UseVisualStyleBackColor = true;
             // 
-            // uxThisDate
+            // uxBelowTemp
             // 
-            this.uxThisDate.AutoSize = true;
-            this.uxThisDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.uxThisDate.Location = new System.Drawing.Point(7, 125);
-            this.uxThisDate.Name = "uxThisDate";
-            this.uxThisDate.Size = new System.Drawing.Size(146, 21);
-            this.uxThisDate.TabIndex = 3;
-            this.uxThisDate.TabStop = true;
-            this.uxThisDate.Text = "This date in history";
-            this.uxThisDate.UseVisualStyleBackColor = true;
+            this.uxBelowTemp.AutoSize = true;
+            this.uxBelowTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.uxBelowTemp.Location = new System.Drawing.Point(7, 55);
+            this.uxBelowTemp.Name = "uxBelowTemp";
+            this.uxBelowTemp.Size = new System.Drawing.Size(222, 21);
+            this.uxBelowTemp.TabIndex = 1;
+            this.uxBelowTemp.TabStop = true;
+            this.uxBelowTemp.Text = "Dates below given temperature";
+            this.uxBelowTemp.UseVisualStyleBackColor = true;
+            // 
+            // uxDateRange
+            // 
+            this.uxDateRange.AutoSize = true;
+            this.uxDateRange.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.uxDateRange.Location = new System.Drawing.Point(7, 20);
+            this.uxDateRange.Name = "uxDateRange";
+            this.uxDateRange.Size = new System.Drawing.Size(205, 21);
+            this.uxDateRange.TabIndex = 0;
+            this.uxDateRange.TabStop = true;
+            this.uxDateRange.Text = "Dates during selected range";
+            this.uxDateRange.UseVisualStyleBackColor = true;
             // 
             // uxFilterButton
             // 

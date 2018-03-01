@@ -16,5 +16,10 @@ namespace Project3
         {
             InitializeComponent();
         }
+
+        private void uxDatesList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

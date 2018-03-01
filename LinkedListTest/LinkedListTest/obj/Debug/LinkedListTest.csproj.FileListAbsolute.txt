@@ -1,0 +1,7 @@
+C:\Users\Julie\Desktop\cis300\LinkedListTest\LinkedListTest\bin\Debug\LinkedListTest.exe.config
+C:\Users\Julie\Desktop\cis300\LinkedListTest\LinkedListTest\bin\Debug\LinkedListTest.exe
+C:\Users\Julie\Desktop\cis300\LinkedListTest\LinkedListTest\bin\Debug\LinkedListTest.pdb
+C:\Users\Julie\Desktop\cis300\LinkedListTest\LinkedListTest\obj\Debug\LinkedListTest.csprojResolveAssemblyReference.cache
+C:\Users\Julie\Desktop\cis300\LinkedListTest\LinkedListTest\obj\Debug\LinkedListTest.csproj.CoreCompileInputs.cache
+C:\Users\Julie\Desktop\cis300\LinkedListTest\LinkedListTest\obj\Debug\LinkedListTest.exe
+C:\Users\Julie\Desktop\cis300\LinkedListTest\LinkedListTest\obj\Debug\LinkedListTest.pdb
